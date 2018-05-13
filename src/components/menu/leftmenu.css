@@ -1,49 +1,42 @@
 .leftmenu {
     box-sizing: inherit;
-    display: inline-block;
     width: 100%;
     position: relative;
-    height: 50%;
-    border: 1px solid red;
-  
+    height: auto;
 }
 .leftmenu ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 .leftmenu ul li {
+    z-index: 1;
     display: block;
     box-sizing: inherit;
     width: 100%;
     height: 3rem;
     line-height: 3rem;
     background-color: transparent;
-    margin: 1rem 0;
+    margin: 0 auto;
     text-align: center;
-    transition: background-color 0.1s;
 }
 .leftmenu ul li:hover{
     cursor: pointer;
-    background-color: black;
+    background-color: #3C4144;
+}
 
-}
-.leftmenu ul li::before{
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 3rem;
-    width: 0.2rem;
-    background-color: green;
-}
 .leftmenu ul li img {
-    width: 50%;
+    z-index: 0;
+    width: 45%;
     height: auto;
     vertical-align: middle;
 }
-.leftmenu ul li a::before {
-    content: "";
-    position: relative;
-    background-color:green;
+
+.logout {
+    position: absolute;
+    top: 24rem;
+}
+.leftmenu ul li.logout:hover {
+    transform: scale(1.1);
+    background-color: transparent;
 }

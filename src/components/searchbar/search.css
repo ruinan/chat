@@ -1,0 +1,28 @@
+.search {
+    display: flex;
+    justify-content: bottom;
+    align-items: center;
+    height: 3rem;
+    border-bottom: 1px solid #2d2f33;
+    place-content: start space-evenly;
+    box-sizing: border-box;
+}
+
+.search input {
+    box-sizing: inherit;
+    width: 80%;
+    height: 1.2rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 1px 5px;
+}
+.search button {
+    height: 1.2rem;
+    background-color: transparent;
+    border: none;
+    box-sizing: inherit;
+}
+.search img {
+    height: 100%;
+    width: auto;
+}

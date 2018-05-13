@@ -1,0 +1,7 @@
+.middlebar {
+    height: 30rem;
+    width: 12rem;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #3C4144;
+}

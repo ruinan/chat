@@ -16,8 +16,7 @@ class Avatar extends React.Component {
     }
     render (){
         return (<div className='avatar' onClick={this.handleClick} >
-            <img src="https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-hacker-3830b32ad9e0802c-512x512.png" alt="Avatar" />
-            <span></span>
+            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" />
         </div>);
     }
 }
