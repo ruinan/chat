@@ -3,4 +3,8 @@ body {
   padding: 0;
   font-family: sans-serif;
   font-size: 10px;
+  
+}
+textarea, input, button { 
+  outline: none; 
 }

@@ -1,28 +1,69 @@
 .search {
     display: flex;
-    justify-content: bottom;
+    justify-content: space-between;
     align-items: center;
     height: 3rem;
     border-bottom: 1px solid #2d2f33;
     place-content: start space-evenly;
     box-sizing: border-box;
+    padding: 9px;
 }
 
 .search input {
     box-sizing: inherit;
     width: 80%;
     height: 1.2rem;
-    border-radius: 0.5rem;
+    border-radius: 0.6rem;
     border: none;
-    padding: 1px 5px;
+    padding: 1px 20px 1px 10px;
+    filter: opacity(75%);
+    transition: filter 0.1s, border-radius 0.1s;
+}
+.search input:focus {
+    filter: opacity(100%);
+    border-radius: 0;
+}
+.search input:focus::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 2px;
+    background-color: red;
 }
 .search button {
+    padding: 0;
     height: 1.2rem;
+    width: 1.2rem;
+    font-size: 1rem;
+    color: white;
     background-color: transparent;
-    border: none;
-    box-sizing: inherit;
+    border: 1px solid white;
+    border-radius: 1.2rem;
+    box-sizing: border-box;
+    filter: opacity(75%);
+    transition: filter 0.1s;
+    text-align: center;
 }
+.search button:hover{
+    cursor: pointer;
+    filter: opacity(100%);
+}
+
+
 .search img {
-    height: 100%;
-    width: auto;
+    display: block;
+    position: relative;
+    color: white;
+    height: 0.6rem;
+    left: -1rem;
+    line-height: 1rem;
+    box-sizing: border-box; 
+    text-align: center;
+    background-image: url("https://www.shareicon.net/download/2015/09/14/101024_delete.ico");
+    visibility: hidden;
+}
+
+.search img:hover {
+    cursor: pointer;
 }

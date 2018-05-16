@@ -6,27 +6,27 @@ class Leftmenu extends React.Component {
         this.state = {
             navs: [
                 {
-                    name: "",
+                    name: "chat",
                     src: 'https://vignette.wikia.nocookie.net/steven-universe/images/1/16/Chat_policy.png/revision/latest?cb=20151229151750',
                 },{
-                    name: "",
+                    name: "contact",
                     src: 'http://flaticons.net/icons/Application/User-Profile.png',
                 }
             ],
             active: null
-        },
-        this.handleClick = this.handleClick.bind(this);
+        };
+        
     }
-    handleClick(e){
-        console.log(e.target);
+    handleClick = (e) => {
+        
     }
     render () {
         return (<nav className="leftmenu">
             <ul onClick={this.handleClick}>
                 {
-                    this.state.navs.map((element, index) => (<li key={index}><a><img src={element.src} /></a></li>))
+                    this.state.navs.map((element, index) => (<li key={index} style={{borderLeft: "2px solid red"}}><img src={element.src} alt={element.name}/></li>))
                 }                
-                <li name="logout" className="logout"><a><img src='http://www.iconsplace.com/download/white-logout-512.png' /></a></li>
+                <li className="logout"><img src='https://cdn1.iconfinder.com/data/icons/creative-round-ui/243/20-512.png' alt='logout'/></li>
             </ul>
         </nav>);
     }
